@@ -1,15 +1,14 @@
 <ion-view view-title="Cronlife">
-
-  <ion-content class="padding" >
-
-    <div class="list card">
-     
-      <div class="item item-body">
-        <div>
-          There is a fire in <b>sector 3</b>
+    <ion-content class="padding">
+        <div class="list card" ng-repeat="cron in crons">
+            <div class="item item-body" >
+        
+                        <button class="button button-small button-outine button-light" ng-click="add($index)">
+                            <i class="icon ion-android-add balanced "></i>
+                        </button>
+                        Add a cronjob for you now {{cron.id}}
+                    
+            </div>
         </div>
-      </div>
-    </div>
-
-  </ion-content>
+    </ion-content>
 </ion-view>
